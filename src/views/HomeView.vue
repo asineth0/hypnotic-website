@@ -1,23 +1,5 @@
 <template>
-  <div class="relative h-64 text-5xl md:h-96 lg:h-96 lg:text-6xl">
-    <img
-      src="../assets/images/backdrop.jpg"
-      class="h-full w-full object-cover object-center"
-    />
-    <div
-      class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 px-6"
-    >
-      <p
-        class="text-center font-bold text-white"
-        style="
-          text-shadow: 0 15px 30px rgba(0, 0, 0, 0.11),
-            0 5px 15px rgba(0, 0, 0, 0.08);
-        "
-      >
-        Welcome to Hypnotic
-      </p>
-    </div>
-  </div>
+  <HeaderCard :image="BackdropImage" title="Welcome to Hypnotic" />
   <div class="space-y-8 py-12">
     <div
       class="space-y-4 px-8 lg:mx-auto lg:flex lg:max-w-6xl lg:items-center lg:justify-between lg:space-y-0"
@@ -46,13 +28,7 @@
         </div>
       </div>
     </div>
-    <div class="py-4 lg:py-8">
-      <div
-        class="flex items-center justify-center border-y border-dark-800 py-8"
-      >
-        <p class="font-center text-4xl font-bold">Our Servers</p>
-      </div>
-    </div>
+    <SectionHeader title="Our Servers" />
     <div
       class="space-y-4 px-8 lg:mx-auto lg:flex lg:max-w-6xl lg:flex-row-reverse lg:items-center lg:justify-between lg:space-y-0"
     >
@@ -130,13 +106,7 @@
         />
       </div>
     </div>
-    <div class="py-4 lg:py-8">
-      <div
-        class="flex items-center justify-center border-y border-dark-800 py-8"
-      >
-        <p class="font-center text-4xl font-bold">Our Team</p>
-      </div>
-    </div>
+    <SectionHeader title="Our Team" />
     <div
       class="space-y-8 px-8 lg:mx-auto lg:flex lg:max-w-6xl lg:justify-center lg:space-x-8 lg:space-y-0"
     >
@@ -167,3 +137,9 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import HeaderCard from "../components/HeaderCard.vue";
+import BackdropImage from "../assets/images/backdrop-home.jpg";
+import SectionHeader from "../components/SectionHeader.vue";
+</script>
