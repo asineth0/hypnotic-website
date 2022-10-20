@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-dark-900 text-white;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+* {
+  @apply focus:outline-none;
+}
+
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-sm bg-white bg-opacity-10;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 100 1000;
+  src: url("./assets/fonts/Inter-VariableFont_slnt,wght.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inconsolata";
+  font-weight: 100 1000;
+  src: url("./assets/fonts/Inconsolata-VariableFont_wdth,wght.woff2")
+    format("woff2");
+}
+
+a {
+  @apply text-blue-400 transition hover:text-blue-500;
+}
