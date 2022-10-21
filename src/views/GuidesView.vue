@@ -1,7 +1,7 @@
 <template>
   <div>
     <HeaderCard :image="BackdropImage" title="Guides" />
-    <div class="mx-auto max-w-4xl space-y-8 py-12">
+    <div class="mx-auto max-w-4xl space-y-8 py-16">
       <SectionContent title="Life RP - Crypto Guide">
         <iframe
           width="560"

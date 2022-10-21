@@ -1,6 +1,6 @@
 <template>
   <HeaderCard :image="BackdropImage" title="Welcome to Hypnotic" />
-  <div class="space-y-8 py-12">
+  <div class="space-y-8 py-16">
     <div
       class="space-y-4 px-8 lg:mx-auto lg:flex lg:max-w-6xl lg:items-center lg:justify-between lg:space-y-0 lg:space-x-4"
     >
